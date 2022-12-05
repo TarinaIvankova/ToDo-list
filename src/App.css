@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+body {
+  background-color: #7b8df4;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: white;
+  min-height: 80vh;
+  width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 1px 2px 0px #191270,
+  1px 2px 4px 0px #191270,
+  2px 4px 8px 0px #191270,
+  2px 4px 16px 0px #191270;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.crossed {
+  text-decoration: line-through 2px rgb(32, 3, 82);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul, li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #473ec3;
+  font-size: 30px;
+}
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.btn-delete {
+  background: #d30100;
+  margin-bottom: 5px;
+padding: 10px;
+border: none;
+width: 70%;
+color: white;
+font-size: 16px;
+font-family: 'Montserrat', sans-serif;
+box-shadow: 0px 1px 2px 0px #430c0c,
+  1px 2px 4px 0px #430c0c,
+  2px 4px 8px 0px #430c0c,
+  2px 4px 16px 0px #430c0c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-add {
+  background: #7b8df4;
+  margin-top: 5px;
+padding: 10px;
+border: none;
+width: 70%;
+color: white;
+font-size: 16px;
+font-family: 'Montserrat', sans-serif;
+box-shadow: 0px 1px 2px 0px #0d0665,
+  1px 2px 4px 0px #0d0665,
+  2px 4px 8px 0px #0d0665,
+  2px 4px 16px 0px #0d0665;
+}
+input {
+  flex: 1;
+  padding: 8px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+img {
+  border-radius: 50%;
+}
+@media all and (max-width: 414px){
+  .app {
+    width: 300px;
+    margin: 5px auto;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    font-size: 20px;
   }
 }
